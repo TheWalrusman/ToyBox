@@ -1,0 +1,12 @@
+{
+  "Id": "NoLoadingScreenKeyAction",
+  "DisplayName": "NoLoadingScreenKeyAction for RogueTrader",
+  "Author": "Kyle Cusack",
+  "Version": "1.5.9a",
+  "ManagerVersion": "0.23.0",
+  "Requirements": [],
+  "AssemblyName": "NoLoadingScreenKeyAction.dll",
+  "EntryMethod": "RT40K.Main.Load",
+  "HomePage": "https://github.com/xADDBx/ToyBox/tree/RT",
+  "Repository": "https://raw.githubusercontent.com/xADDBx/ToyBox/RT/ToyBox/ModDetails/Repository.json"
+}

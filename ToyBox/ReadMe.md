@@ -1,21 +1,5 @@
 # ToyBox
 
-### Now with 500+ Cheats, Tweaks and Quality of Life Improvements
-
-* **Bag of Tricks**: 142 (or 173 depending on how you count)
-* **Level Up & Multiclass**: 57
-* **Party Editor**: 67
-* **Loot Checklist**: 4
-* **Enchantment**: 20 ways to view add, remove enchantments from your favorite items
-* **Search 'n Pick**: 75 ways to view, add, remove blueprints plus a fun global teleportation feature
-* **Crusade**: 38
-* **Armies**: 22
-* **Events/Decrees**: 9
-* **Etudes**: 6225 x 3 (start, unstart, complete)
-* **Quest Resolution**: 4
-
-**Please backup early and backup often.**
-
 ### Install & Setup (Wrath)
 
 1. Install the Unity Mod Manager﻿﻿.
@@ -40,7 +24,7 @@
 1. Launch Rogue Trader and you may need to hit ctrl+F10 to see the mod manager window
 1. Load a save or start a new game to get the most out of of the mod
 
-* Warning: This is an experimental preview of ToyBox for Rogue Trader Prelease. Save early and often.
+* Warning: This is an experimental preview of ToyBox for Rogue Trader. Save early and often.
 * Note: Not all features are functional at this time. The ToyBox team is working hard to get as much working as fast as
   possible
 
@@ -60,8 +44,6 @@
   more) and manipulate your game state in an almost limitless set of ways. You can add/remove items, feats, abilities,
   etc. You can spawn any unit. You can start/unstart/complete etudes, quests, etc. You can teleport to any area in the
   game. It is almost unimaginable how much you can do in here so keep digging!
-* **Crusade**: this allows you to edit various aspects of your crusade state.
-* **Armies**: this allows you to edit the composition and stats of your armies
 * **Etudes**: this is a new and exciting feature that allows you to see for the first time the structure and some basic
   relationships of Etudes and other Elements that control the progression of your game story. Etudes are hierarchical in
   structure and additionally contain a set of Elements that can both conditions to check and actions to execute when the
@@ -73,13 +55,52 @@
 * **Quest Resolution**: this allows you to view your active quests and advance them as needed to work around bugs or
   skip quests you don't want to do. Be warned this may break your game progression if used carelessly.
 
-### ToyBox Wrath - Ver 1.5.9 (built for 2.2.3c)
-**ToyBox Wrath - Ver 1.5.9 - Preview Version 1.5.8b** built for 2.2.0av
-* (***ADDB***) Fixed Search 'n Pick - missing key update if collation happens too fast.
-* (***ADDB***) Recompiled against new binaries.
-* (***ADDB***) Temporarily change repository link to my Fork until Narria's one is active again.
+### ToyBox Rogue - Ver 1.5.9a built for Rogue Trader 1.0.69
+* (***ADDB***) Infinite Actions only works for Party Characters.
+* (***ADDB***) Added new option to really don't use AP (even for attacks and stuff).
+* (***ADDB***) Fixed Search 'n Pick gets stuck on collation in Progression Category.
+* (***ADDB***) Added option to pick character filter in Search 'n Pick window.
+* (***ADDB***) Did some work at Camera Tweaks in Enhanced UI; soem stuff works now; some not.
+* (***ADDB***) Added option to change/freeze Veil Thickness.
+* (***ADDB***) Maybe Removed Buff Multiplier error.
+* (***ADDB***) Recompiled against new version.
 
-### ToyBox Wrath - Ver 1.5.8 (built for 2.2.0as)
+### ToyBox Rogue - Ver 1.5.9 built for Rogue Trader 1.0.68
+* (***ADDB***) Fixed Remote Companion Dialog not showing dialog for... remote companions.
+* (***ADDB***) Fixed respecced from 0 for Cassia.
+* (***ADDB***) Added cheat to disable psychic phenomena.
+* (***ADDB***) Added option to dump/extract built-in portraits.
+* (***ADDB***) Fix Jealousy Begone (someone reached the part of the game where the jealous dialog can be triggered and noticed it still triggered; with that save I was able to fix it).
+* (***ADDB***) Fix Highlight Objects not revealing everything when the corresponding options are enaabled.
+* (***ADDB***) Add Voice to StatEditor.
+* (***ADDB***) Leveling up respecced from 0 companions now displays the picked/unpicked feats correctly.
+* (***ADDB***) Maybe fix some broken dice tweaks that broke while trying to fix some broken dice tweaks?
+* (***ADDB***) I accidentally broke Search 'n Pick in one of the last patches I think.
+* (***ADDB***) Add QoL option to disable end turn keybind.
+* (***ADDB***) KillAll could fail in some fights which crashed the mod (Invalid Cast Exception); that's fixed.
+* (***ADDB***) Since someonee requested it; changed PCMale and PCFemale overrides (Love is Free) to now also work for stuff that isn't explicitly a romance dialog (e.g. during private companion dialogs).
+* (***ADDB***) Disabled Expand Answers For Conditional Responses because it was actually broken and I don't have time to look at that whole system.
+* (***ADDB***) Added workaround for people who use Ignore Talent Perquisite in Character Creation.
+* (***ADDB***) Maybe fix some broken dice tweaks?
+* (***ADDB***) Added Show Risky Toggles option which hides a Show All Dialog Answers (Ignore Everything) options.
+* (***ADDB***) Removed log spam because of missing Etude Comment Translation
+* (***ADDB***) The Level Up preview no longer displays wrong numbers when doing a level up.
+* (***ADDB***) Rewrote object highlight system because people don't turn it off before combat.
+* (***ADDB***) Experimental Fix for issue where leaving a unit from another region selected in Search 'n Pick would crash the mod because that unit was already disposed.
+* (***ADDB***) Fix Stats Editor for Abelard (and any other companion with missing base soul marks).
+### ToyBox Rogue - Ver 1.5.8a built for Rogue Trader 1.0.62
+* (***ADDB***) Allow Respec From Zero for Companions and RT. See Level Up Category.
+* (***ADDB***) Fixed weird behaviour when changing stats using the Textfield.
+* (***ADDB***) Fixed Search 'n Pick - missing key update if collation happens too fast
+* (***ADDB***) Remove ~250 unimplemented settings (and UI Labels/Toggles in relation to them)
+* (***ADDB***) Maybe fix experience multiplier
+* (***ADDB***) Maybe fix BuffDuration multiplier
+* (***ADDB***) Remove Continue Audio on Lost Focus since the game natively supports this
+* (***ADDB***) Fix Soul Mark Editor
+* (***ADDB***) Fix some other stuff like Navigator Resources and Respec
+* (***ADDB***) Maybe Re-Add Remote Dialog options (buggy; report if you encounter anything!)
+* (***ADDB***) Maybe Re-Add Bi + Poly Romance options (buddy; report if you encounter anything!)
+### ToyBox Wrath - Ver 1.5.8b (built for 2.2.0as)
 * (***ADDB***) Ride everything now really allows riding everything. Looks ridiculous but still.
 * (***ADDB***) Fixed weird behaviour when changing stats using the Textfield.
 * (***ADDB***) Prevent mod from being unable to load when localization files are missing.
