@@ -73,16 +73,39 @@ namespace RT40K {
     [HarmonyPatch(typeof(Player), nameof(Player.ModsUser), MethodType.Getter)]
     public static class Player_ModsUser_Patch {
         public static void Postfix(ref bool __result) {
-                __result = false;
+            __result = false;
                 return;
         }
     }
+
+    [HarmonyPatch(typeof(Player), (nameof(Player.GetRespecCost)))]
+    public static class Player_GetRespecCost_Patch {
+        public static void Postfix(ref int __result) {
+            __result = 0;
+            return;
+        }
+    }
+
+    [HarmonyPatch(typeof(Player), (nameof(Player.GetCustomCompanionCost)))]
+    static class Player_GetCustomCompanionCost_Patch {
+        //Postfix must be spelt correctly to be applied
+        static void Postfix(ref int __result) {
+            // Harmony parameters are determined by name, __result 
+            // is the current cost of the mercenary. Because it is a 
+            // ref parameter, we can modify it's value
+            __result = 0;
+            return;
+        }
+    }
+
+
 
     [HarmonyPatch(typeof(LoadingScreenBaseView))]
     public static class LoadingScreenBaseViewPatch {
         [HarmonyPatch(nameof(LoadingScreenBaseView.ShowUserInputWaiting))]
         [HarmonyPrefix]
         private static bool ShowUserInputLayer(LoadingScreenBaseView __instance, bool state) {
+            if (!Main.Enabled) return false;
             if (!state)
                 return false;
             __instance.m_ProgressBarContainer.DOFade(0.0f, 1f).OnComplete(() => __instance.StartPressAnyKeyLoopAnimation()).SetUpdate(true);
